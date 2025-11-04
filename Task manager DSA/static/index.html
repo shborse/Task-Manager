@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌈 Collaborative Task Manager</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">🌈 Collaborative Task Manager</h1>
+
+    <div class="card">
+      <div class="input-area">
+        <input type="text" id="username" placeholder="👤 Your name..." />
+        <br>
+        <input type="text" id="taskInput" placeholder="📝 Task title..." />
+        <br>
+        <input type="date" id="dueInput" />
+        <br>
+        <select id="priorityInput">
+          <option value="1">Priority 1</option>
+          <option value="2">Priority 2</option>
+          <option value="3">Priority 3</option>
+          <option value="4">Priority 4</option>
+          <option value="5">Priority 5</option>
+        </select>
+        <br>
+        <select id="statusInput">
+          <option>Pending</option>
+          <option>In Progress</option>
+          <option>Completed</option>
+        </select>
+        <br>
+        <button id="addBtn">➕ Add Task</button>
+      </div>
+      <div id="notifications" style="display:none;" class="notifications-box">
+      
+      </div>
+
+      <ul id="taskList" class="task-list"></ul>
+
+      <div class="actions">
+        <button id="undoBtn" class="secondary">↩️ Undo</button>
+        <button id="redoBtn" class="secondary">↪️ Redo</button>
+        <button id="notifyBtn" class="highlight">🔔 Show Notifications</button>
+      </div>
+
+      <div id="notifications" class="notifications"></div>
+    </div>
+
+    <footer class="footer">
+      <p>Made by <strong>Palak</strong>, <strong>Shreya</strong> & <strong>Gayatri</strong></p>
+    </footer>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
